@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <py-script src="login.py"></py-script>
+        <div id="lg" style="visibility:visible">
+            <div id="div_id">
+                <label for="in_id">ID</label>
+                <br>
+                <input type="text" id="in_id">
+            </div>
+            <div id="div_pw">
+                <label for="in_pw">PASSWORD</label>
+                <br>
+                <input type="password" id="in_pw">
+            </div>
+            <div id="div_btn">
+                <button pys-onClick="login" id="btn_login">login</button>
+                <input type="checkbox" id="in_save">
+                <label for="in_save">아이디 저장</label>
+                <br>
+                <label id="lb_fail" style="color:red"></label>
+            </div>
+
+        </div>
+        <div id="lgss" style="visibility:hidden">
+            <label>로그인 성공</label>
+            <button pys-onClick="logout" id="btn_logout">logout</button>
+        </div>
+</body>
+</html>

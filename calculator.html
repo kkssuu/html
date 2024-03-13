@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <py-script src="calculator.py"></py-script>
+    <h1>동수의 계산기</h1>
+    <input type="text" id="in_a" placeholder="숫자 입력" size="5">
+    <select id="sel_math">
+        <option>+</option>
+        <option>-</option>
+        <option>x</option>
+        <option>/</option>
+    </select>
+    <input type="text" id="in_b" placeholder="숫자 입력" size="5">
+    <button id="btn_math" pys-onClick="equal">=</button>
+    <label id="lb_c">?</label>
+
+    
+</body>
+</html>
